@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(32, 50, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+label{
+    color: white;
+}
+
+.error{
+    color: white;
+    background-color: red;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 2px;
+    display: none;
+}
+
+input{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.375);
+    width: -webkit-fill-available;
+}
+
+form{
+    width: 300px;
+}
