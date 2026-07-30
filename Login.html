@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
 </head>
-<body>
+<body class="centralize">
     <form>
         <div>
           <label for="username">Nome de usuário:</label><br>
@@ -34,7 +34,7 @@
         <br>
 
         <div>
-          <button type="button" class="clear" id="recover-password-button" disabled autocomplete="off" > Recuperar senha</button><br><br>
+          <button type="button" class="clear" id="recover-password-button" disabled autocomplete="off" onclick="recoverPassword()" > Recuperar senha</button><br><br>
           <button type="button" class="solid" id="login-button" disabled autocomplete="off" onclick="login()">Entrar</button><br><br>
           <button type="button" class="outline" id="registrar-button" onclick="register()" >Registrar</button><br><br>
         </div>
@@ -42,7 +42,9 @@
 </body>
 
 <script src="login.js"> </script>
+<script src="loading.js"> </script>
 <script src="validations.js"> </script>
+
 <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
 <script> 

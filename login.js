@@ -9,12 +9,15 @@ function onChangePassrowd() {
 }
 
 function login() {
+    showLoading();
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
     ).then(response => {
+        hideLoading()
         window.location.href = "pages/home/home.html";
   }).catch(error => {
-    alert(getErrorMessage(error));
+      hideLoading();
+      alert(getErrorMessage(error));
   });
 }
 
@@ -23,10 +26,26 @@ function getErrorMessage(error) {
         return 'Usuário não encontrado'
     } 
     console.log('error', error); 
+
+    if (error,code == "auth/wrong-password") {
+        return "Senha inválida"
+    }
+    return error.message;
 }
 
 function register() {
     window.location.href = "Pages/register/register.html";
+}
+
+function recoverPassword() {
+    showLoading();
+    firebase.auth().sendPasswordResetEmail(form.email().value).then(() => {
+        hideLoading();
+        alert('Email enviado com sucesso');
+    }).catch(error => {
+        hideLoading();
+        alert(getErrorMessage(error));
+    });
 }
 
 function isEmailValid() {
