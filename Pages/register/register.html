@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="register.css">
 </head>
-<body>
-    register
+<body class="centralize">
+
+<div class="auth-container">
+  <div class="spinner-wrap">
+    <svg class="circleSpin" viewBox="0 0 120 120">
+    <defs>
+      <linearGradient id="fadeRastro" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#00e5ff" stop-opacity="1" />
+        <stop offset="100%" stop-color="#00e5ff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+
+    <circle class="trilho" cx="60" cy="60" r="50" />
+
+    <circle class="arco" cx="60" cy="60" r="50" />
+    <circle class="arco" cx="60" cy="60" r="50" transform="rotate(120, 60, 60)" />
+    <circle class="arco" cx="60" cy="60" r="50" transform="rotate(240, 60, 60)" />
+  </svg>
+  </div>
+  <form>
+    <div class="form-field">
+         <div><label>Email</label></div>
+         <input type="email" placeholder="seu@email.com"/>
+        </div>
+        <div class="error" id="email-required-error">Email é obrigatorio </div>
+          <div class="error" id="email-invalid-error">Email é invalido</div>
+
+        <div class="form-field">
+         <div> <label>Senha</label> </div>
+         <input type="password" placeholder="Senha" />
+        </div>
+        <div class="error" id="password-required-error">senha é obrigatorio </div>
+          <div class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres</div>
+
+        <div>
+         <div><label>Confirmar senha</label></div>
+         <input type="password"  placeholder="Confirmar senha"/>
+        </div>
+        <div class="error" id="password-doesnt-match-error">senha é obrigatorio </div>
+
+        <div>
+         <button type="button" class="solid">Registrar</button>
+        </div>
+
+        <div>
+         <button type="button" class="clear">Login</button>
+        </div>
+  </form>
+
 </body>
 </html>

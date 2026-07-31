@@ -40,6 +40,16 @@ body{
 button{
     cursor: pointer;
     padding: 6px;
+    margin-top: 12px;
+    width: -webkit-fill-available;
+    border-radius: 12px;
+}
+
+input{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.375);
     width: -webkit-fill-available;
 }
 
@@ -49,4 +59,8 @@ button[disabled]{
 
 button:active{
     opacity: 0.8;
+}
+
+.form-field{
+    margin-bottom: 10px;
 }

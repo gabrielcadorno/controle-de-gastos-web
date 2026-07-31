@@ -16,13 +16,6 @@ label{
     display: none;
 }
 
-input{
-    padding: 6px;
-    border-radius: 6px;
-    border: none;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.375);
-    width: -webkit-fill-available;
-}
 
 form{
     width: 300px;
