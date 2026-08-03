@@ -48,7 +48,7 @@
         <div class="error" id="password-doesnt-match-error">senha é confirmar senha, devem ser iguais</div>
 
         <div>
-         <button type="button" class="solid" disabled="true" id="register-button">Registrar</button>
+         <button type="button" class="solid" disabled="true" id="register-button" onclick="register()">Registrar</button>
         </div>
 
         <div>
@@ -59,4 +59,9 @@
 </body>
 <script src="register.js"></script>
 <script src="../../validations.js"></script>
+<script src="../../loading.js"> </script>
+
+<script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"> </script>
 </html>
