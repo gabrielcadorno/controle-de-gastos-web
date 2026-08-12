@@ -1,13 +1,28 @@
 body{
+    background-color: rgb(32, 50, 129);
+    height: 100vh;
+}
+
+label{
+    color: white;
+}
+
+.error{
+    color: white;
+    background-color: red;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 2px;
+    display: none;
+}
+
+
+form{
+    width: 300px;
+}
+
+body{
     margin: 0;
-}
-
-header{
-    text-align: right;
-}
-
-header button{
-    width: auto;
 }
 
 .centralize {

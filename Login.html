@@ -10,13 +10,6 @@
 <body class="centralize">
     <form>
         <div>
-          <label for="username">Nome de usuário:</label><br>
-          <input type="text" id="username" name="username" placeholder="Nome" required>
-        </div>
-
-        <br>
-
-        <div>
           <label for ="email">Email:</label><br>
           <input type="email" id="email" name="email" placeholder="seu@email.com" required onchange="onChangeEmail()">
           <div class="error" id="email-required-error">Email é obrigatorio </div>
@@ -41,7 +34,6 @@
     </form>
 </body>
 
-<script src="login.js"> </script>
 <script src="validations.js"> </script>
 <script src="loading.js"> </script>
 
@@ -49,4 +41,5 @@
 <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
 <script src="firebase-init.js"> </script>
 
+<script src="login.js"> </script>
 </html>

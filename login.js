@@ -1,3 +1,9 @@
+firebase.auth().onAuthStateChanged(function(user){
+    if (user){
+        window.location.href = "pages/home/home.html"
+    }
+})
+
 function onChangeEmail() {
     toggleButtonsDisable();
     toggleEmailErrors();
